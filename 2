@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+
+    printf("a degerini giriniz: ");
+    scanf("%d",&a);
+    printf("b degerini giriniz: ");
+    scanf("%d",&b);
+
+    if(a>b)
+        printf("%d mod %d = %d",a,b,a%b);
+    else
+        printf("%d mod %d = %d",b,a,b%a);
+
+    return 0;
+}
