@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h> 
+int main(){ 
+int a,b; 
+float c; 
+printf("Dogru Sayisini Girin: "); 
+scanf("%d",&a); 
+printf("Yanlis Sayisini Girin: "); 
+scanf("%d",&b); c=(a-b)-b/4.0; 
+printf("Net Sayisi: %f\n",c); 
+if(c<10){ 
+printf("Kur Adi: Beginner "); 
+}
+else if(c>=10 && c<30){ 
+printf("Kur Adi: Elementary ");
+}
+else if(c>=30 && c<50){
+printf("Kur Adi: Preintermediate "); 
+}
+else if(c>=50 && c<70){
+printf("Kur Adi: Intermediate "); 
+}
+else { printf("Kur Adi: Upper"); 
+} 
+return 0; 
+}
