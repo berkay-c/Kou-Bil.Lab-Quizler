@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a;
+    float x,y;
+    char islem;
+    X: printf("Baslamak için 1'e basiniz.\n"); 
+    printf("Cikmak için 0'a basiniz.\n");
+    scanf("%d",&a);
+    if(a!=0 || a!=1)
+    {
+        printf(" HATALİ TUSLAMA\n");
+        goto X;
+    }
+    while(a==1){
+        printf("Enter [Sayi 1] Islem [+ - * /] [Sayi 2]\n");
+    scanf("%f %c %f",&x,&islem,&y);
+
+    switch(islem)
+    {
+        case '+':
+            printf("%f + %f = %f\n",x,y,x+y);
+            break;
+
+        case '-':
+            printf("%f - %f = %f\n",x,y,x-y);
+            break;
+
+        case '*':
+            printf("%f * %f = %f\n",x,y,x*y);
+            break;
+
+        case '/':
+            if(y==0){
+                printf("Bolme isleminde bir sayinin sifira bolumu tanimsizdir!\n");
+                break;
+            }
+            printf("%f / %f = %f\n",x,y,x/y);
+            break;
+    }
+    
+    }
+
+    return 0;
+}
