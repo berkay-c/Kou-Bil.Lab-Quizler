@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    float kilo;
+    float boy;
+    float bk_endeks;
+    
+
+    printf("Kilo degerinizi giriniz (kg): ");
+    scanf("%f",&kilo);
+    printf("Boy degerinizi giriniz (m): ");
+    scanf("%f",&boy);
+    printf("\n");
+
+    bk_endeks=kilo/(boy*boy);
+    printf("Vucut kitle endeksiniz: %f\n",bk_endeks);
+
+    if(bk_endeks>0&&bk_endeks<18.5)
+        printf("Ideal kilonuzun altindasiniz\n");
+    else if(bk_endeks>=18.5&&bk_endeks<25)
+        printf("Kilonuz tamamen normal\n");
+    else if(bk_endeks>=25)
+        printf("Ideal kilonuzun ustundesiniz\n");
+    else
+        printf("Hatali deger girdiniz!\n");
+
+    return 0;
+}
