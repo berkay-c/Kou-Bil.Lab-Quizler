@@ -1,0 +1,25 @@
+(Sağ ok, sol ok, yukarı ok ve aşağı ok) yön tuşlarını kullanarak bu tuşlara her dokunulduğunda
+imlecin ekrandaki o anki konumuna + karakterini yerleştiren ve böylece ekrana çizim
+yapılabilmesini sağlayan bir programı C programlama dilinde kodlayınız. Çizim yapabilme
+özelliğini aktifleştiren ve pasifleştiren tuş boşluk tuşu olmalıdır; yani boşluk tuşu vasıtasıyla ekrana
+çizim yapma/yapmama özelliği ayarlanmaktadır. Boşluk tuşu bir nevi mod seçicidir, ekranda
+herhangi bir yazım işlemi yapılmaksızın imlecin serbestçe hareket ettirileceğini, ya da yön tuşları
+ile gezinirken imlecin o anki yerleşimine + karakterinin basılacağını belirlemektedir. Boşluk
+tuşunun yön tuşlarına her basıldığında kullanılması gerekmemektedir! Boşluk tuşuna basıldıktan
+sonra yön tuşları defalarca kere ve gerektiği kadar kullanılabilir, bu sayede gerektiği kadar +
+sembolü ekrana basılabilir ya da ekrana herhangi bir şey yazmadan imleç serbestçe gerektiği kadar
+hareket ettirilebilir. Daha da açıklamak gerekirse: Boşluk tuşuna basıldı (çizim yapma modu
+aktifleştirildi, imlecin olduğu yere + yazıldı, sol üstteki kırmızı +), ardından aşağı ok, aşağı ok, aşağı
+ok; boşluk tuşuna basıldı (çizim yapmama, yani serbest gezim modu aktifleştirildi); sonra sağ ok,
+sağ ok, sağ ok; boşluk tuşuna basıldı (çizim yapma modu tekrar aktifleştirildi, o an imlecin olduğu
+yere + yazıldı, sağ alttaki kırmızı +); yukarı ok, yukarı ok kullanılacak olursa aşağıdaki gibi bir
+çıktının ekranda oluşması sağlanacaktır. Programdan çıkmak için esc tuşu kullanılacaktır. (80 puan)
+ilk hareket noktası --> +
+ + + <-- son gelinen yer
+ + +
+ +..+
+Yukarıda iki nokta .. serbest gezim yapılan iki boşluğu göstermektedir, normalde ekranda
+nokta (.) gözükmeyecektir, .. ekrandaki çıktıyı daha iyi anlatmak amacıyla serbest gezilerek
+boşluk olması sağlanan yerleri temsilen göstermek için kullanılmıştır. Kırmızı artılar (+),
+boşluk tuşuna basılan anları göstermektedir, siz herhangi bir renk kullanmayacaksınız,
+kırmızı artılar sadece sorunun daha iyi anlaşılması amacıyla kullanılmıştır.
